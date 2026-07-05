@@ -1,7 +1,12 @@
 @media (max-width: 1180px) {
   .section-shell,
-  .footer-inner {
+  .footer-grid,
+  .footer-bottom {
     width: min(100% - 80px, 1400px);
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .hero {
@@ -63,9 +68,21 @@
   }
 
   .section-shell,
-  .footer-inner {
+  .footer-grid,
+  .footer-bottom {
     width: calc(100% - 36px);
     padding: 48px 0;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 40px;
+    padding-bottom: 24px;
+  }
+
+  .footer-bottom {
+    padding-top: 20px;
+    padding-bottom: 28px;
   }
 
   .hero {
@@ -82,12 +99,6 @@
     grid-template-columns: 1fr;
   }
 
-  .solution-list > article,
-  .solution-list > article:nth-child(4),
-  .solution-list > article:nth-child(5) {
-    grid-column: auto;
-  }
-
   .about-panel {
     align-items: center;
     text-align: center;
@@ -101,17 +112,8 @@
     flex-direction: column;
   }
 
-  .footer-inner {
-    grid-template-columns: 1fr;
-    justify-items: center;
-    gap: 20px;
-    text-align: center;
-  }
-
-  .footer-inner > :first-child,
-  .footer-inner > a,
-  .footer-made {
-    justify-self: center;
+  .why-panel {
+    padding: 28px;
   }
 }
 
@@ -171,5 +173,9 @@
 
   .contact-mail {
     word-break: break-all;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
   }
 }
