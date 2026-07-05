@@ -12,14 +12,10 @@
   .hero {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding-top: 96px;
-    padding-bottom: 56px;
-    gap: 40px;
   }
 
   .hero-copy {
     max-width: 850px;
-    padding-top: 0;
   }
 
   .hero h1 {
